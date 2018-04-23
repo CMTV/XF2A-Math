@@ -137,12 +137,6 @@
         "version_string": "1.0.0",
         "hash": "112da82ecf204ab32c77dc630c1601e8"
     },
-    "option.Math_MathJaxSource.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "47e9538c94b23540b7e51d49243f2915"
-    },
     "option.Math_displayMathAlign.txt": {
         "global_cache": false,
         "version_id": 1000070,
@@ -178,12 +172,6 @@
         "version_id": 1000070,
         "version_string": "1.0.0",
         "hash": "9d8d82d2ec893dc3099aea12255d0397"
-    },
-    "option_explain.Math_MathJaxSource.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "9877916414a32906422ed668324c51cf"
     },
     "option_explain.Math_displayMathAlign.txt": {
         "global_cache": false,

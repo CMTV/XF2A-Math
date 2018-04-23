@@ -46,10 +46,4 @@ MathJax.Hub.Config({
 
 <xf:js src="Math/core.extend.js" addon="Math" />
 
-<xf:if is="$xf.options.Math_MathJaxSource === 'local'">
-	<script async src="{{ js_url('Math/MathJax/MathJax.js?config=default&locale=ru') }}"></script>
-</xf:if>
-
-<xf:if is="$xf.options.Math_MathJaxSource === 'cdnjs'">
-	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=default&locale=ru"></script>
-</xf:if>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=default&locale=ru"></script>

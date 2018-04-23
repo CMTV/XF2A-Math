@@ -4,16 +4,11 @@
     "data_type": "array",
     "sub_options": [
         "where",
-        "places",
-        "places.titles",
-        "places.content",
-        "places.pages",
-        "places.signatures",
-        "places.about"
+        "places"
     ],
     "validation_class": "",
     "validation_method": "",
-    "default_value": "{\"where\":\"places\",\"places\":{\"titles\":\".p-title , .structItem-title, .contentRow-title, .node-extra-title, [data-widget-definition=new_posts] .contentRow-main a\",\"content\":\".message-body, .tooltip-content, .contentRow-snippet, [data-widget-definition=new_profile_posts] .contentRow-faderContainer, .bbCodePreview-content\",\"pages\":\"[data-template=help_page] .p-body-pageContent, [data-template=help_page] .p-title, .p-body-sideNavContent .blockLink, .template-help_page_list .dataList-row\",\"signatures\":\".message-signature, [data-template=member_view] .block-row:contains(Signature)\",\"about\":\"[data-template=member_view] .block-row:first-of-type\"},\"places.titles\":\"\",\"places.content\":\"\",\"places.pages\":\"\",\"places.signatures\":\"\",\"places.about\":\"\"}",
+    "default_value": "{\"where\":\"places\",\"places\":{\"titles\":\".p-title , .structItem-title, .contentRow-title, .node-extra-title, [data-widget-definition=new_posts] .contentRow-main a\",\"content\":\".message-body, .tooltip-content, .contentRow-snippet, [data-widget-definition=new_profile_posts] .contentRow-faderContainer, .bbCodePreview-content\",\"pages\":\"[data-template=help_page] .p-body-pageContent, [data-template=help_page] .p-title, .p-body-sideNavContent .blockLink, .template-help_page_list .dataList-row\",\"signatures\":\".message-signature, [data-template=member_view] .block-row:contains(Signature)\",\"about\":\"[data-template=member_view] .block-row:first-of-type\"}}",
     "relations": {
         "Math": 300
     }
