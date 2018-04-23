@@ -1,0 +1,34 @@
+<xf:title>{{ phrase('Math_insert') }}</xf:title>
+
+<xf:js src="Math/insertMathDialogController.js" addon="Math" />
+
+<form class="block" id="editor-insert-math-form">
+	<div class="block-container">
+		<div class="block-body" data-xf-init="insert-math-dialog-controller">
+			<xf:radiorow listclass="math-type" name="math-type" label="{{ phrase('type') }}"
+						 explain="{{ phrase('Math_type_explain') }}" value="block">
+				<xf:option value="inline">{{ phrase('Math_inline') }}</xf:option>
+				<xf:option value="block">{{ phrase('Math_block') }}</xf:option>
+			</xf:radiorow>
+
+			<xf:textarearow name="math-input" label="{{ phrase('Math_latex_input') }}" 
+							explain="{{ phrase('Math_latex_input_explain') }}" autofocus="true" />
+
+			<h2 class="block-formSectionHeader">
+				<span class="block-formSectionHeader-aligner">
+					<span class="math-preview-loading"><i class="fa MathAddonIcon-renderingPreview fa-spin"></i></span>
+					{{ phrase('Math_preview') }}
+				</span>
+			</h2>
+
+			<div class="math-output-wrapper">
+				<div class="math-preview"></div>
+
+				<div class="math-message math-incorrect-message">{{ phrase('Math_provide_a_correct_LaTeX_input') }}</div>
+
+				<div class="math-message math-init-message">{{ phrase('Math_start_typing_math_in_LaTeX_input') }}</div>
+			</div>
+		</div>
+		<xf:submitrow submit="{{ phrase('continue') }}" id="editor_insert_math_submit" />
+	</div>
+</form>

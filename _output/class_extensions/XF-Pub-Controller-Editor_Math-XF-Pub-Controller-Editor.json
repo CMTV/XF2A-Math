@@ -1,0 +1,6 @@
+{
+    "from_class": "XF\\Pub\\Controller\\Editor",
+    "to_class": "Math\\XF\\Pub\\Controller\\Editor",
+    "execute_order": 10,
+    "active": true
+}

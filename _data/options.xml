@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="Math_MathJaxSource" edit_format="radio" data_type="string">
+    <default_value>local</default_value>
+    <edit_format_params>local={{ phrase('locally_hosted') }}
+cdnjs=cdnjs</edit_format_params>
+    <relation group_id="Math" display_order="10"/>
+    <relation group_id="performance" display_order="3000"/>
+  </option>
+  <option option_id="Math_displayMathAlign" edit_format="radio" data_type="string">
+    <default_value>center</default_value>
+    <edit_format_params>left={{ phrase('left') }}
+center={{ phrase('Math_center') }}
+right={{ phrase('right') }}</edit_format_params>
+    <relation group_id="Math" display_order="100"/>
+  </option>
+  <option option_id="Math_renderSelectors" edit_format="callback" data_type="array" validation_class="Math\Option\SelectorsArray" validation_method="verifyOption">
+    <default_value>[]</default_value>
+    <edit_format_params>Math\Option\SelectorsArray::renderOption</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="Math" display_order="400"/>
+  </option>
+  <option option_id="Math_showMathJaxMenu" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="Math" display_order="200"/>
+  </option>
+  <option option_id="Math_showMathJaxMessages" edit_format="onoff" data_type="boolean">
+    <default_value>0</default_value>
+    <relation group_id="Math" display_order="210"/>
+  </option>
+  <option option_id="Math_skipSelectors" edit_format="callback" data_type="array" validation_class="Math\Option\SelectorsArray" validation_method="verifyOption">
+    <default_value>[]</default_value>
+    <edit_format_params>Math\Option\SelectorsArray::renderOption</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="Math" display_order="410"/>
+  </option>
+  <option option_id="Math_whereActive" edit_format="template" data_type="array">
+    <default_value>{"where":"places","places":{"titles":".p-title , .structItem-title, .contentRow-title, .node-extra-title, [data-widget-definition=new_posts] .contentRow-main a","content":".message-body, .tooltip-content, .contentRow-snippet, [data-widget-definition=new_profile_posts] .contentRow-faderContainer, .bbCodePreview-content","pages":"[data-template=help_page] .p-body-pageContent, [data-template=help_page] .p-title, .p-body-sideNavContent .blockLink, .template-help_page_list .dataList-row","signatures":".message-signature, [data-template=member_view] .block-row:contains(Signature)","about":"[data-template=member_view] .block-row:first-of-type"},"places.titles":"","places.content":"","places.pages":"","places.signatures":"","places.about":""}</default_value>
+    <edit_format_params>option_template_Math_whereActive</edit_format_params>
+    <sub_options>where
+places
+places.titles
+places.content
+places.pages
+places.signatures
+places.about</sub_options>
+    <relation group_id="Math" display_order="300"/>
+  </option>
+</options>

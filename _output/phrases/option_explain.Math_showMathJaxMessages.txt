@@ -1,0 +1,1 @@
+If enabled MathJax related messages (loading components, extensions and processing math progress) will be showing at bottom-left corner.

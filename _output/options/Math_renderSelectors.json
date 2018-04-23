@@ -1,0 +1,14 @@
+{
+    "edit_format": "callback",
+    "edit_format_params": "Math\\Option\\SelectorsArray::renderOption",
+    "data_type": "array",
+    "sub_options": [
+        "*"
+    ],
+    "validation_class": "Math\\Option\\SelectorsArray",
+    "validation_method": "verifyOption",
+    "default_value": "[]",
+    "relations": {
+        "Math": 400
+    }
+}

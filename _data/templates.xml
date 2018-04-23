@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="Math" version_id="1000070" version_string="1.0.0"><![CDATA[<!-- MathJax configuration -->
+<script type="text/x-mathjax-config">
+function markMathJaxElements()
+{
+	var elements = [''];
+
+	<xf:if is="{{ $xf.options.Math_whereActive.where === 'everywhere' }}">
+		$('body').addClass('mathjax-render');
+		<xf:else />
+		$('{{ $xf.options.Math_whereActive.places|join }}').addClass('mathjax-render');
+		$('{{ $xf.options.Math_renderSelectors|join }}').addClass('mathjax-render');
+	</xf:if>
+	
+	$('{{ $xf.options.Math_skipSelectors|join }}')
+		.removeClass('mathjax-render')
+		.addClass('mathjax-skip')
+		.find('*').removeClass('mathjax-render');
+	
+	if($('.mathjax-render').length !== 0)
+	{
+		elements = $('.mathjax-render').get();
+	}
+		
+	return elements;
+}
+
+MathJax.Hub.Config({
+	<xf:if is="{{ !$xf.options.Math_showMathJaxMenu }}">showMathMenu: false,</xf:if>
+    displayAlign: "{{ $xf.options.Math_displayMathAlign }}",
+	<xf:if is="{{ !$xf.options.Math_showMathJaxMessages }}">messageStyle: "none",</xf:if>
+	elements: markMathJaxElements(),
+    tex2jax: {
+        inlineMath: [ ['\\(','\\)'] ],
+        displayMath: [ ['\\[','\\]'] ],
+		processEscapes: true,
+		processClass: 'mathjax-render',
+        ignoreClass: 'bbCodeBlock|bbCodeInline|fr-box|mathjax-skip',
+		skipTags: $('.message-signature').get()
+    },
+	CommonHTML: { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true }, imageFont: null },
+    SVG: { linebreaks: { automatic: true } },
+    TeX: {extensions: ['AMSmath.js', 'AMSsymbols.js']}
+});
+</script>
+
+<xf:js src="Math/core.extend.js" addon="Math" />
+
+<xf:if is="$xf.options.Math_MathJaxSource === 'local'">
+	<script async src="{{ js_url('Math/MathJax/MathJax.js?config=default&locale=ru') }}"></script>
+</xf:if>
+
+<xf:if is="$xf.options.Math_MathJaxSource === 'cdnjs'">
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=default&locale=ru"></script>
+</xf:if>]]></template>
+  <template type="public" title="Math.less" version_id="1000070" version_string="1.0.0"><![CDATA[// Some icons for addon
+@font-face {
+	font-family: 'MathAddon';
+	src: url({{ base_url('styles/fonts/Math/icons.ttf') }});
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="MathAddonIcon-"], [class*=" MathAddonIcon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'MathAddon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.MathAddonIcon-insertMathIcon:before {
+	content: "\e900";
+}
+.MathAddonIcon-renderingPreview:before {
+	content: "\e982";
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+// MathJax overflow handling
+
+.mjx-chtml,
+.MathJax_Display, .MathJax,
+.MathJax_PHTML, .MathJax_PHTML_Display,
+.MathJax_SVG, .MathJax_SVG_Display,
+.MathJax_PlainSource, .MathJax_PlainSource_Display,
+.MathJax_MathML
+{
+	outline: none;
+	
+	padding-bottom: 1px;
+	
+	overflow: hidden;
+	overflow-x: auto;
+	
+	&::-webkit-scrollbar 
+	{
+		width: 7px;
+		height: 7px;
+	}
+
+	&::-webkit-scrollbar-track 
+	{
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb 
+	{
+		background: xf-intensify(@xf-textColorMuted, -20%);
+		
+		&:hover
+		{
+			background: xf-intensify(@xf-textColorMuted, -10%);
+		}
+		
+		&:active
+		{
+			background: @xf-textColorMuted;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+#MathJax_MenuFrame,
+.MathJax_Menu.MathJax_ContextMenu
+{
+	z-index: 2000 !important;
+}
+
+#editor-insert-math-form
+{	
+	.math-preview-loading
+	{
+		padding-right: 5px;
+		opacity: 0;
+		
+		transition: opacity 0.25s;
+		
+		&.showing
+		{
+			opacity: 1;
+		}
+	}
+	
+	.math-output-wrapper
+	{
+		width: 100%;
+		overflow: auto;
+		padding: 1em;
+	}
+	
+	.math-preview
+	{
+		text-align: center;
+	}
+	
+	.math-message
+	{
+
+		text-align: center;
+		font-size: 110%;
+	}
+	
+	.math-incorrect-message
+	{
+		color: red;
+	}
+	
+	.math-init-message
+	{
+		color: @xf-paletteNeutral2;
+	}
+}]]></template>
+  <template type="public" title="_help_page_test" version_id="1000070" version_string="1.0.0"><![CDATA[sfsdfsdf
+asdfasdf
+
+\[ \int\limits^a_b \]]]></template>
+  <template type="public" title="editor_dialog_Math_insert" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:title>{{ phrase('Math_insert') }}</xf:title>
+
+<xf:js src="Math/insertMathDialogController.js" addon="Math" />
+
+<form class="block" id="editor-insert-math-form">
+	<div class="block-container">
+		<div class="block-body" data-xf-init="insert-math-dialog-controller">
+			<xf:radiorow listclass="math-type" name="math-type" label="{{ phrase('type') }}"
+						 explain="{{ phrase('Math_type_explain') }}" value="block">
+				<xf:option value="inline">{{ phrase('Math_inline') }}</xf:option>
+				<xf:option value="block">{{ phrase('Math_block') }}</xf:option>
+			</xf:radiorow>
+
+			<xf:textarearow name="math-input" label="{{ phrase('Math_latex_input') }}" 
+							explain="{{ phrase('Math_latex_input_explain') }}" autofocus="true" />
+
+			<h2 class="block-formSectionHeader">
+				<span class="block-formSectionHeader-aligner">
+					<span class="math-preview-loading"><i class="fa MathAddonIcon-renderingPreview fa-spin"></i></span>
+					{{ phrase('Math_preview') }}
+				</span>
+			</h2>
+
+			<div class="math-output-wrapper">
+				<div class="math-preview"></div>
+
+				<div class="math-message math-incorrect-message">{{ phrase('Math_provide_a_correct_LaTeX_input') }}</div>
+
+				<div class="math-message math-init-message">{{ phrase('Math_start_typing_math_in_LaTeX_input') }}</div>
+			</div>
+		</div>
+		<xf:submitrow submit="{{ phrase('continue') }}" id="editor_insert_math_submit" />
+	</div>
+</form>]]></template>
+  <template type="admin" title="option_template_Math_selectorsArray" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:formrow rowtype="input"
+	label="{$option.title}"
+	hint="{$hintHtml}"
+	explain="{$explainHtml}"
+	html="{$listedHtml}">
+
+	<ul class="listPlain inputGroup-container">
+		<xf:foreach loop="$selectors" key="$counter" value="$selector">
+			<li class="inputGroup">
+				<xf:textbox name="{$inputName}[{$counter}]" value="{$selector}" placeholder="{{ phrase('Math_selector') }}" size="20" />
+			</li>
+		</xf:foreach>
+
+		<li class="inputGroup" data-xf-init="field-adder" data-increment-format="{$inputName}[{counter}]">
+			<xf:textbox name="{$inputName}[{$nextCounter}]" placeholder="{{ phrase('Math_selector') }}" size="20" />
+		</li>
+	</ul>
+</xf:formrow>]]></template>
+  <template type="admin" title="option_template_Math_whereActive" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:radiorow name="{$inputName}[where]"
+			 label="{$option.title}"
+			 hint="{$hintHtml}"
+			 explain="{$explainHtml}"
+			 html="{$listedHtml}">
+
+	<xf:option value="everywhere" selected="$option.option_value.where == 'everywhere'"
+			   label="{{ phrase('everywhere') }}" hint="{{ phrase('Math_render_everywhere_hint') }}" />
+
+	<xf:option value="places" selected="$option.option_value.where == 'places'"
+			   label="{{ phrase('Math_in_certain_places') }}">
+
+		<xf:checkbox>
+
+			<xf:option name="{$inputName}[places][titles]" label="{{ phrase('Math_titles') }}"
+					   checked="{$option.option_value.places.titles}" value=".p-title , .structItem-title, .contentRow-title, .node-extra-title, [data-widget-definition=new_posts] .contentRow-main a" />
+			
+			<xf:option name="{$inputName}[places][content]" label="{{ phrase('Math_places_content') }}"
+					   checked="{$option.option_value.places.content}" value=".message-body, .tooltip-content, .contentRow-snippet, [data-widget-definition=new_profile_posts] .contentRow-faderContainer, .bbCodePreview-content" />
+			
+			<xf:option name="{$inputName}[places][pages]" label="{{ phrase('pages') }}"
+					   checked="{$option.option_value.places.pages}" value="[data-template=help_page] .p-body-pageContent, [data-template=help_page] .p-title, .p-body-sideNavContent .blockLink, .template-help_page_list .dataList-row" />
+			
+			<xf:option name="{$inputName}[places][signatures]" label="{{ phrase('Math_signatures') }}"
+					   checked="{$option.option_value.places.signatures}" value=".message-signature, [data-template=member_view] .block-row:contains({{ phrase('signature') }})" />
+			
+			<xf:option name="{$inputName}[places][about]" label="{{ phrase('about') }}"
+					   checked="{$option.option_value.places.about}" value="[data-template=member_view] .block-row:first-of-type" />
+			
+		</xf:checkbox>
+
+	</xf:option>
+
+</xf:radiorow>]]></template>
+</templates>

@@ -1,0 +1,23 @@
+{
+    "Math_MathJaxSource.json": {
+        "hash": "9304fe225e846e5b8617ee99d9084ede"
+    },
+    "Math_displayMathAlign.json": {
+        "hash": "a3d64e4b8be4fba30cfd726041e0a4a3"
+    },
+    "Math_renderSelectors.json": {
+        "hash": "8932a2aef726797a3a4646e76d8ffc84"
+    },
+    "Math_showMathJaxMenu.json": {
+        "hash": "efb370a5aa796187cc4628721cafe6f5"
+    },
+    "Math_showMathJaxMessages.json": {
+        "hash": "aa4a7cc5f1da3aba31fe814351122127"
+    },
+    "Math_skipSelectors.json": {
+        "hash": "3993c13f64d86713717e5bfbb9b51c00"
+    },
+    "Math_whereActive.json": {
+        "hash": "2e28ceef045a672c9c2b0578196b4dc8"
+    }
+}

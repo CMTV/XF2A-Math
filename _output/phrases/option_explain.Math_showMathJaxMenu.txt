@@ -1,0 +1,1 @@
+MathJax Help menu appears when right-clicking on any rendered math. It allows users to zoom the math and change the renderer.

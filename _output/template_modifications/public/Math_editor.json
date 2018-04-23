@@ -1,0 +1,9 @@
+{
+    "template": "editor",
+    "description": "Adding \"Insert math\" button to Froala editor",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<!--[XF:include_js]-->",
+    "replace": "$0\n\n<xf:js src=\"Math/insertMath.plugin.js\" addon=\"Math\" />\n<xf:css src=\"Math.less\" />"
+}

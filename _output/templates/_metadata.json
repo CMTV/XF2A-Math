@@ -1,0 +1,32 @@
+{
+    "admin/option_template_Math_selectorsArray.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d57551f5a460da4ce24d217d110190b6"
+    },
+    "admin/option_template_Math_whereActive.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "f462674d6cf20743162c39fcb5938b8c"
+    },
+    "public/Math.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "00956310004e720f38fa3269c6b87027"
+    },
+    "public/Math.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d09be4400d3bfa243d94960c1b91e457"
+    },
+    "public/_help_page_test.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "feaf4be34d77f1bd6ff04e2509d74625"
+    },
+    "public/editor_dialog_Math_insert.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "be57b5b67d562b96e4be1cec2f2c11ec"
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class_extensions>
+  <extension from_class="XF\Pub\Controller\Editor" to_class="Math\XF\Pub\Controller\Editor" execute_order="10" active="1"/>
+</class_extensions>

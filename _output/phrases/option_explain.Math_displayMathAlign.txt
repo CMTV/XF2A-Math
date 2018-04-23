@@ -1,0 +1,1 @@
+Controls how big formulas and equations (all block math) will be aligned in the message.

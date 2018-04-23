@@ -1,0 +1,16 @@
+{
+    "legacy_addon_id": "",
+    "title": "Math",
+    "description": "This addon adds renders math on your forum with MathJax and adds an \"Insert math\" button to editor.",
+    "version_id": 1000070,
+    "version_string": "1.0.0",
+    "dev": "CMTV",
+    "dev_url": "https://xenforo.com/community/members/cmtv.162075/",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": {
+        "My addons": "https://xenforo.com/community/resources/authors/cmtv.162075/"
+    },
+    "require": [],
+    "icon": "icon.png"
+}

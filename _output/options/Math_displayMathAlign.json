@@ -1,0 +1,12 @@
+{
+    "edit_format": "radio",
+    "edit_format_params": "left={{ phrase('left') }}\ncenter={{ phrase('Math_center') }}\nright={{ phrase('right') }}",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "center",
+    "relations": {
+        "Math": 100
+    }
+}

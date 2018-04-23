@@ -1,0 +1,1 @@
+Controls the source of the MathJax core JavaScript library. You may host this yourself (Local) or use cdnjs CDN service.
