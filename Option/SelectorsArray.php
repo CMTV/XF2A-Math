@@ -1,16 +1,10 @@
 <?php
 /**
- * Question Threads
- *
- * You CAN use/change/share this code.
+ * Math xF2 addon by CMTV
  * Enjoy!
- *
- * Written by CMTV
- * Date: 21.04.2018
- * Time: 12:32
  */
 
-namespace Math\Option;
+namespace CMTV\Math\Option;
 
 use XF\Option\AbstractOption;
 
@@ -19,12 +13,13 @@ class SelectorsArray extends AbstractOption
     public static function renderOption(\XF\Entity\Option $option, array $htmlParams)
     {
         $selectors = [];
-        foreach ($option->option_value AS $selector)
+
+        foreach ($option->option_value as $selector)
         {
             $selectors[] = $selector;
         }
 
-        return self::getTemplate('admin:option_template_Math_selectorsArray', $option, $htmlParams, [
+        return self::getTemplate('admin:option_template_CMTV_Math_selectorsArray', $option, $htmlParams, [
             'selectors' => $selectors,
             'nextCounter' => count($selectors)
         ]);
@@ -34,7 +29,7 @@ class SelectorsArray extends AbstractOption
     {
         $output = [];
 
-        foreach ($value AS $selector)
+        foreach ($value as $selector)
         {
             if (empty($selector))
             {

@@ -1,0 +1,32 @@
+<xf:title>{{ phrase('CMTV_Math_insert_math') }}</xf:title>
+
+<xf:js prod="CMTV/Math/insert-math-form.min.js" dev="CMTV/Math/insert-math-form.js" addon="CMTV/Math" />
+
+<form class="block" id="editor_math_form" data-xf-init="insert-math-form">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:radiorow name="math_type" label="{{ phrase('CMTV_Math_type') }}" explain="{{ phrase('CMTV_Math_type_explain') }}">
+				<xf:option value="block" checked="checked" label="{{ phrase('CMTV_Math_block') }}" />
+				<xf:option value="inline" label="{{ phrase('CMTV_Math_inline') }}" />
+			</xf:radiorow>
+			
+			<xf:textarearow name="latex_input" rows="2" autosize="true" autofocus="1"
+							label="{{ phrase('CMTV_Math_latex_input') }}" explain="{{ phrase('CMTV_Math_latex_input_explain') }}" />
+		
+			<h2 class="block-formSectionHeader">
+				<span class="block-formSectionHeader-aligner">
+					<span class="preview-loading"><xf:fa icon="fa-sync-alt fa-spin" /></span>
+					{{ phrase('CMTV_Math_preview') }}
+				</span>
+			</h2>
+			
+			<div class="preview-container showing">
+				<div class="preview">Preview</div>
+				<div class="error">{{ phrase('CMTV_Math_incorrect_latex_input') }}</div>
+				<div class="empty">{{ phrase('CMTV_Math_start_typing_math') }}</div>
+			</div>
+		</div>
+		
+		<xf:submitrow submit="{{ phrase('continue') }}" id="editor_math_submit" />
+	</div>
+</form>

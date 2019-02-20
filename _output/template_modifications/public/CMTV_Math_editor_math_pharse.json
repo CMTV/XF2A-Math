@@ -1,0 +1,9 @@
+{
+    "template": "editor",
+    "description": "Loading \"Math\" button's title phrase",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\"__lang end__\": \"\"",
+    "replace": "\"Math\": \"{{ phrase('CMTV_Math_math')|escape('json') }}\",\n\n$0"
+}

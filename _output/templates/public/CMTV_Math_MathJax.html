@@ -1,0 +1,85 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  	// CMTV_Math_MathJax_CONFIG_START
+    
+	tex2jax: {
+		processClass: 	"mathjax-proceed",
+		ignoreClass:	"mathjax-skip"
+	},
+	asciimath2jax: {
+		processClass: 	"mathjax-proceed",
+		ignoreClass:	"mathjax-skip"
+	},
+	
+  	showMathMenu:  {$xf.options.CMTV_Math_mathjax_showMathMenu},
+  	messageStyle: "{$xf.options.CMTV_Math_mathjax_messageStyle}",
+	displayAlign: "{$xf.options.CMTV_Math_mathjax_displayAlign}",
+	
+	// CMTV_Math_MathJax_CONFIG_END
+  });
+</script>
+
+<script class="js-CMTV_Math_renderOptions" type="application/json">{$xf.options.CMTV_Math_renderPositions|json|raw}</script>
+<script class="js-CMTV_Math_customRenderSelectors" type="application/json">{$xf.options.CMTV_Math_renderSelectors|json|raw}</script>
+<script class="js-CMTV_Math_customSkipSelectors" type="application/json">{$xf.options.CMTV_Math_skipSelectors|json|raw}</script>
+
+<script class="js-CMTV_Math_predefinedSelectors" type="application/json">
+	{
+		"titles": [
+			".p-title-value",
+			".contentRow-title",
+			".p-body-sidebar .contentRow-main > a",
+			".resourceSidebarList .contentRow-main > a",
+			".node-extra-title",
+			".structItem-title"
+		],
+		
+		"content": [
+			".message-body",
+			".contentRow-snippet",
+			".tooltip-content",
+			".resourceBody-main",
+			".structItem-resourceTagLine",
+			".bbCodePreview-content",
+			".comment-body",
+			"[data-widget-definition='new_profile_posts'] .contentRow-faderContent"
+		],
+		
+		"pages": [
+			"[data-template='help_page'] .p-body-pageContent",
+			"[data-template='help_page'] .p-body-sideNavContent",
+			"[data-template='help_index'] .p-body-pageContent",
+			"[data-template='help_index'] .p-body-sideNavContent"
+		],
+		
+		"signatures": [
+			".message-signature",
+			"[data-template=member_view] .block-row:contains({{ phrase('signature') }})"
+		],
+		
+		"about": [
+			"[data-template=member_view] .block-row:first-of-type"
+		],
+		
+		"skipDefault": [
+			".bbCodeBlock",
+			".bbCodeInline",
+			".fr-box"
+		]
+	}
+</script>
+
+<xf:js prod="CMTV/Math/selector-resolver.min.js" dev="CMTV/Math/selector-resolver.js" addon="CMTV/Math" />
+<script>CMTV_Math.SResolver.resolve();</script>
+
+<xf:js prod="CMTV/Math/core.extend.min.js" dev="CMTV/Math/core.extend.js" addon="CMTV/Math" />
+
+<xf:set var="$config" value="" />
+
+<xf:if is="$xf.options.CMTV_Math_mathjax_configuration">
+	<xf:set var="$config" value="?config={$xf.options.CMTV_Math_mathjax_configuration}" />
+</xf:if>
+
+<xf:set var="$locale">{{ $xf.language.language_code|substr(0, 2) }}</xf:set>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js{$config}&locale={$locale}" async></script>

@@ -1,1 +1,0 @@
-Inline math is smaller and should be used inside the text. Block is bigger and should be used for big equations and formulas. It also creates line breaks before and after.

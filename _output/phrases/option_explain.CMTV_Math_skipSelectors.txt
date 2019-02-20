@@ -1,0 +1,1 @@
+Type jQuery selector. This can be an element ID, class or their combination. For example: "<code>div.foo [name=bar]</code>" will find elements with <code>name="bar"</code> attribute inside a "div" element with "foo" class.

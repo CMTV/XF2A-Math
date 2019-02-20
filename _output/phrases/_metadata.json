@@ -1,224 +1,236 @@
 {
-    "Math_block.txt": {
+    "CMTV_Math_block.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "e1e4c8c9ccd9fc39c391da4bcd093fb2"
     },
-    "Math_center.txt": {
+    "CMTV_Math_center.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "4f1f6016fc9f3f2353c0cc7c67b292bd"
     },
-    "Math_conversation_post.txt": {
+    "CMTV_Math_in_certain_positions.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "c362707fbde0c52827e386740bf8defa"
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "6a6b1dcccbda1ab869e615588c252599"
     },
-    "Math_conversation_title.txt": {
+    "CMTV_Math_incorrect_latex_input.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "1a6b92ec53b03171f2ba9690ce76e728"
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "4b53b3e4e5a494cae7c74808625dc1b9"
     },
-    "Math_help_page.txt": {
+    "CMTV_Math_inline.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "b74e3abe0472a81fdef253d3c2f8115f"
-    },
-    "Math_in_certain_places.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "da97a01ba379b0e7ae014ea703383062"
-    },
-    "Math_inline.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "0125cf5f3ca38b312ca5d3b511c45a13"
     },
-    "Math_insert.txt": {
+    "CMTV_Math_insert_math.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "d23b3f3367e79a14d77b56b5cf71029c"
     },
-    "Math_latex_input.txt": {
+    "CMTV_Math_latex_input.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "87873c77f84e838ae3b4c1ca069b6688"
     },
-    "Math_latex_input_explain.txt": {
+    "CMTV_Math_latex_input_explain.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "f3fb3ef68ea53f330fbef13a3ff1a153"
     },
-    "Math_places_content.txt": {
+    "CMTV_Math_left.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "e6d004cb9912d1ef7c2acb7fc04e328b"
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "945d5e233cf7d6240f6b783b36a374ff"
     },
-    "Math_preview.txt": {
+    "CMTV_Math_math.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "31fde7b05ac8952dacf4af8a704074ec"
-    },
-    "Math_provide_a_correct_LaTeX_input.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "c853ccdaefbbfe45e572a900f32fd8a1"
-    },
-    "Math_render_everywhere_hint.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "3f26f93c78eeadf26c623acdd3b22e80"
-    },
-    "Math_selector.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "0c3cd33e7bf626da4897316a7158a7a4"
-    },
-    "Math_signatures.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "dc1c9ce0179181c4f64b0bd191f2f05f"
-    },
-    "Math_start_typing_math_in_LaTeX_input.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "951dba4c62d41d465f07f67512f6ae8c"
-    },
-    "Math_thread_post.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "f8bc755fe9a7b3132943697569ff7fd5"
-    },
-    "Math_thread_title.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "eae08e29c636d9742b6a96fc3213d12e"
-    },
-    "Math_titles.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "8612579044efe457f11398b5a2377226"
-    },
-    "Math_type_explain.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "a34039196471867b5a8f08ef8fe71c8d"
-    },
-    "help_page_desc.test.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "033bd94b1168d7e4f0d644c3c95e35bf"
-    },
-    "help_page_title.test.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "112da82ecf204ab32c77dc630c1601e8"
-    },
-    "option.Math_displayMathAlign.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "3440c2619c674986bf060c3dc203dbd2"
-    },
-    "option.Math_renderSelectors.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "29c56ca540cb1b8117b0e92e95c05eea"
-    },
-    "option.Math_showMathJaxMenu.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "1bdccf05634683a1f5e6b35eb53ac869"
-    },
-    "option.Math_showMathJaxMessages.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "b792be3fd9a5b6b8b81da88e99c493b3"
-    },
-    "option.Math_skipSelectors.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "4b1505625a001f130b5b8b044c6e7bda"
-    },
-    "option.Math_whereActive.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "9d8d82d2ec893dc3099aea12255d0397"
-    },
-    "option_explain.Math_displayMathAlign.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "88f24dcf39aa1d4af3d30107b01aeb86"
-    },
-    "option_explain.Math_renderSelectors.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "3a846f2946da79289210c1d057bc5a93"
-    },
-    "option_explain.Math_showMathJaxMenu.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "beb9016af0ef397f8c7dd4cba3a33f8c"
-    },
-    "option_explain.Math_showMathJaxMessages.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "4f825530cbf858fedcbdf13c13bceefd"
-    },
-    "option_explain.Math_skipSelectors.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "3a846f2946da79289210c1d057bc5a93"
-    },
-    "option_explain.Math_whereActive.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "d41d8cd98f00b204e9800998ecf8427e"
-    },
-    "option_group.Math.txt": {
-        "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "a49950aa047c2292e989e368a97a3aae"
     },
-    "option_group_description.Math.txt": {
+    "CMTV_Math_none.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "6adf97f83acf6453d4a6a4b1070f3754"
+    },
+    "CMTV_Math_normal.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "960b44c579bc2f6818d2daaf9e4c16f0"
+    },
+    "CMTV_Math_position_content.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "f15c1cae7882448b3fb0404682e17e61"
+    },
+    "CMTV_Math_position_signatures.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "dc1c9ce0179181c4f64b0bd191f2f05f"
+    },
+    "CMTV_Math_position_titles.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "8612579044efe457f11398b5a2377226"
+    },
+    "CMTV_Math_preview.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "31fde7b05ac8952dacf4af8a704074ec"
+    },
+    "CMTV_Math_render_everywhere_hint.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "3f26f93c78eeadf26c623acdd3b22e80"
+    },
+    "CMTV_Math_right.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "92b09c7c48c520c3c55e497875da437c"
+    },
+    "CMTV_Math_selector.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "0c3cd33e7bf626da4897316a7158a7a4"
+    },
+    "CMTV_Math_simple.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "1fbb1e3943c2c6c560247ac8f9289780"
+    },
+    "CMTV_Math_start_typing_math.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "3801750deb56ca73c307275a0adfc9e9"
+    },
+    "CMTV_Math_type.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "a1fa27779242b4902f7ae3bdd5c6d508"
+    },
+    "CMTV_Math_type_explain.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "4ea9450da0c6573ef72d1e0f6a8ad7f7"
+    },
+    "option.CMTV_Math_mathjax_configuration.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "28e7ada3dc69aaa8be24be53e6046333"
+    },
+    "option.CMTV_Math_mathjax_displayAlign.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "8b0eeba5230b5fb4ff4a33f829a802a2"
+    },
+    "option.CMTV_Math_mathjax_messageStyle.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "f7eb7f9834b6161089a0cbfc8cecd56a"
+    },
+    "option.CMTV_Math_mathjax_showMathMenu.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "f78b45a70cc104daa6968f9668c9ffdc"
+    },
+    "option.CMTV_Math_renderPositions.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "9d8d82d2ec893dc3099aea12255d0397"
+    },
+    "option.CMTV_Math_renderSelectors.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "fe7dfe3bda1cfc8d552e3a498d84c349"
+    },
+    "option.CMTV_Math_skipSelectors.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "a2d42cbf69cc05413f09ef05bb07c6e5"
+    },
+    "option_explain.CMTV_Math_mathjax_configuration.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "cadcbb1d989bd8d2026078d2d5c2278c"
+    },
+    "option_explain.CMTV_Math_mathjax_displayAlign.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
         "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.CMTV_Math_mathjax_messageStyle.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "c53fe45237d94714e02713c1580e8caa"
+    },
+    "option_explain.CMTV_Math_mathjax_showMathMenu.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "f94f18e03ee265ccfdf526fb059993e9"
+    },
+    "option_explain.CMTV_Math_renderPositions.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.CMTV_Math_renderSelectors.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "4908f6974b815773877cb5ebef602e22"
+    },
+    "option_explain.CMTV_Math_skipSelectors.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "7949845fdd9856e9695f1caf3e6b441b"
+    },
+    "option_group.CMTV_Math.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "a49950aa047c2292e989e368a97a3aae"
+    },
+    "option_group_description.CMTV_Math.txt": {
+        "global_cache": false,
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "0e12fab7991bab4d0496b8d39b131fa2"
     }
 }

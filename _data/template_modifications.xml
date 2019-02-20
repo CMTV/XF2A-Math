@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <template_modifications>
-  <modification type="public" template="editor" modification_key="Math_editor" description="Adding &quot;Insert math&quot; button to Froala editor" execution_order="10" enabled="1" action="str_replace">
+  <modification type="public" template="editor" modification_key="CMTV_Math_editor_math_button" description="Including handler for &quot;Math&quot; button" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<!--[XF:include_js]-->]]></find>
-    <replace><![CDATA[$0
+    <replace><![CDATA[<xf:js prod="CMTV/Math/insert-math-button.min.js" dev="CMTV/Math/insert-math-button.js" addon="CMTV/Math" />
 
-<xf:js src="Math/insertMath.plugin.js" addon="Math" />
-<xf:css src="Math.less" />]]></replace>
+$0]]></replace>
   </modification>
-  <modification type="public" template="helper_js_global" modification_key="Math_helper_js_global" description="MathJax integration" execution_order="10" enabled="1" action="str_replace">
+  <modification type="public" template="editor" modification_key="CMTV_Math_editor_math_pharse" description="Loading &quot;Math&quot; button's title phrase" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA["__lang end__": ""]]></find>
+    <replace><![CDATA["Math": "{{ phrase('CMTV_Math_math')|escape('json') }}",
+
+$0]]></replace>
+  </modification>
+  <modification type="public" template="helper_js_global" modification_key="CMTV_Math_helper_js_global_mathjax" description="Loading and configuring MathJax" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<!--XF:JS-->]]></find>
     <replace><![CDATA[$0
 
-<xf:include template="Math" />]]></replace>
+<xf:include template="CMTV_Math_MathJax" />]]></replace>
+  </modification>
+  <modification type="public" template="helper_js_global" modification_key="CMTV_Math_helper_js_global_style" description="Including addon stylesheet" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<!--XF:CSS-->]]></find>
+    <replace><![CDATA[<xf:css src="CMTV_Math.less" />
+
+$0]]></replace>
   </modification>
 </template_modifications>

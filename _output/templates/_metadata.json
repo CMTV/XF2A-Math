@@ -1,32 +1,27 @@
 {
-    "admin/option_template_Math_selectorsArray.html": {
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "d57551f5a460da4ce24d217d110190b6"
+    "admin/option_template_CMTV_Math_renderPositions.html": {
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "b8caadab657a204126eb3f5ff83c6cb3"
     },
-    "admin/option_template_Math_whereActive.html": {
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "f462674d6cf20743162c39fcb5938b8c"
+    "admin/option_template_CMTV_Math_selectorsArray.html": {
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "bbea7615c0c6987a95d2bd5f48cbf6fd"
     },
-    "public/Math.html": {
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "5bbb99157c60f3fa8d2c58c7f147c6be"
+    "public/CMTV_Math.less": {
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "bbe6ccd6558362112c01ceafb88c5895"
     },
-    "public/Math.less": {
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "d09be4400d3bfa243d94960c1b91e457"
+    "public/CMTV_Math_MathJax.html": {
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "e5c6bf3b47aecada56b060dd9f3a9eec"
     },
-    "public/_help_page_test.html": {
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "feaf4be34d77f1bd6ff04e2509d74625"
-    },
-    "public/editor_dialog_Math_insert.html": {
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "be57b5b67d562b96e4be1cec2f2c11ec"
+    "public/CMTV_Math_editor_dialog_math.html": {
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "e7d1d8189829fdf25c3856aca9d06e17"
     }
 }

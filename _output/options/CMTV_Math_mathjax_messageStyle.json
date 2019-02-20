@@ -1,0 +1,12 @@
+{
+    "edit_format": "radio",
+    "edit_format_params": "normal={{ phrase('CMTV_Math_normal') }}\nsimple={{ phrase('CMTV_Math_simple') }}\nnone={{ phrase('CMTV_Math_none') }}",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "default_value": "none",
+    "relations": {
+        "CMTV_Math": 20
+    }
+}

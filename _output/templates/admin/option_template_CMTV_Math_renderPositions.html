@@ -1,0 +1,19 @@
+<xf:radiorow name="{$inputName}[where]"
+			 label="{$option.title}"
+			 hint="{$hintHtml}"
+			 explain="{$explainHtml}"
+			 html="{$listedHtml}">
+
+	<xf:option value="everywhere" selected="$option.option_value.where == 'everywhere'"
+			   label="{{ phrase('everywhere') }}" hint="{{ phrase('CMTV_Math_render_everywhere_hint') }}" />
+
+	<xf:option value="positions" selected="$option.option_value.where == 'positions'" label="{{ phrase('CMTV_Math_in_certain_positions') }}">
+		<xf:checkbox>
+			<xf:option name="{$inputName}[positions][titles]" label="{{ phrase('CMTV_Math_position_titles') }}" checked="{$option.option_value.positions.titles}" />
+			<xf:option name="{$inputName}[positions][content]" label="{{ phrase('CMTV_Math_position_content') }}" checked="{$option.option_value.positions.content}" />
+			<xf:option name="{$inputName}[positions][pages]" label="{{ phrase('pages') }}" checked="{$option.option_value.positions.pages}" />
+			<xf:option name="{$inputName}[positions][signatures]" label="{{ phrase('CMTV_Math_position_signatures') }}" checked="{$option.option_value.positions.signatures}" />
+			<xf:option name="{$inputName}[positions][about]" label="{{ phrase('about') }}" checked="{$option.option_value.positions.about}" />
+		</xf:checkbox>
+	</xf:option>
+</xf:radiorow>

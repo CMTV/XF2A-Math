@@ -1,0 +1,9 @@
+{
+    "event_id": "editor_dialog",
+    "execute_order": 10,
+    "callback_class": "CMTV\\Math\\EventsListener",
+    "callback_method": "editorDialog",
+    "active": true,
+    "hint": "CMTVMath",
+    "description": "Loading \"Insert math\" dialog when clicking on \"Math\" button"
+}

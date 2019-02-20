@@ -1,6 +1,11 @@
 {
     "additional_files": [
-        "js/Math",
-        "styles/fonts/Math"
+        "js/CMTV/Math/"
+    ],
+    "minify": [
+        "js/CMTV/Math/insert-math-button.js",
+        "js/CMTV/Math/insert-math-form.js",
+        "js/CMTV/Math/selector-resolver.js",
+        "js/CMTV/Math/core.extend.js"
     ]
 }

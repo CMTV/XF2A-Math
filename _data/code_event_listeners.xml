@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<code_event_listeners>
+  <listener event_id="editor_button_data" execute_order="10" callback_class="CMTV\Math\EventsListener" callback_method="editorButtonData" active="1" description="Adding &quot;Math&quot; button that opens an &quot;Inset math&quot; dialog"/>
+  <listener event_id="editor_dialog" execute_order="10" callback_class="CMTV\Math\EventsListener" callback_method="editorDialog" active="1" hint="CMTVMath" description="Loading &quot;Insert math&quot; dialog when clicking on &quot;Math&quot; button"/>
+</code_event_listeners>

@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <options>
-  <option option_id="Math_displayMathAlign" edit_format="radio" data_type="string">
+  <option option_id="CMTV_Math_mathjax_configuration" edit_format="textbox" data_type="string">
+    <default_value>TeX-MML-AM_CHTML</default_value>
+    <relation group_id="CMTV_Math" display_order="10"/>
+  </option>
+  <option option_id="CMTV_Math_mathjax_displayAlign" edit_format="radio" data_type="string">
     <default_value>center</default_value>
-    <edit_format_params>left={{ phrase('left') }}
-center={{ phrase('Math_center') }}
-right={{ phrase('right') }}</edit_format_params>
-    <relation group_id="Math" display_order="100"/>
+    <edit_format_params>left={{ phrase('CMTV_Math_left') }}
+center={{ phrase('CMTV_Math_center') }}
+right={{ phrase('CMTV_Math_right') }}</edit_format_params>
+    <relation group_id="CMTV_Math" display_order="30"/>
   </option>
-  <option option_id="Math_renderSelectors" edit_format="callback" data_type="array" validation_class="Math\Option\SelectorsArray" validation_method="verifyOption">
-    <default_value>[]</default_value>
-    <edit_format_params>Math\Option\SelectorsArray::renderOption</edit_format_params>
-    <sub_options>*</sub_options>
-    <relation group_id="Math" display_order="400"/>
+  <option option_id="CMTV_Math_mathjax_messageStyle" edit_format="radio" data_type="string">
+    <default_value>none</default_value>
+    <edit_format_params>normal={{ phrase('CMTV_Math_normal') }}
+simple={{ phrase('CMTV_Math_simple') }}
+none={{ phrase('CMTV_Math_none') }}</edit_format_params>
+    <relation group_id="CMTV_Math" display_order="20"/>
   </option>
-  <option option_id="Math_showMathJaxMenu" edit_format="onoff" data_type="boolean">
+  <option option_id="CMTV_Math_mathjax_showMathMenu" edit_format="onoff" data_type="boolean">
     <default_value>1</default_value>
-    <relation group_id="Math" display_order="200"/>
+    <relation group_id="CMTV_Math" display_order="40"/>
   </option>
-  <option option_id="Math_showMathJaxMessages" edit_format="onoff" data_type="boolean">
-    <default_value>0</default_value>
-    <relation group_id="Math" display_order="210"/>
-  </option>
-  <option option_id="Math_skipSelectors" edit_format="callback" data_type="array" validation_class="Math\Option\SelectorsArray" validation_method="verifyOption">
-    <default_value>[]</default_value>
-    <edit_format_params>Math\Option\SelectorsArray::renderOption</edit_format_params>
-    <sub_options>*</sub_options>
-    <relation group_id="Math" display_order="410"/>
-  </option>
-  <option option_id="Math_whereActive" edit_format="template" data_type="array">
-    <default_value>{"where":"places","places":{"titles":".p-title , .structItem-title, .contentRow-title, .node-extra-title, [data-widget-definition=new_posts] .contentRow-main a","content":".message-body, .tooltip-content, .contentRow-snippet, [data-widget-definition=new_profile_posts] .contentRow-faderContainer, .bbCodePreview-content","pages":"[data-template=help_page] .p-body-pageContent, [data-template=help_page] .p-title, .p-body-sideNavContent .blockLink, .template-help_page_list .dataList-row","signatures":".message-signature, [data-template=member_view] .block-row:contains(Signature)","about":"[data-template=member_view] .block-row:first-of-type"}}</default_value>
-    <edit_format_params>option_template_Math_whereActive</edit_format_params>
+  <option option_id="CMTV_Math_renderPositions" edit_format="template" data_type="array">
+    <default_value>{"where":"positions","positions":{"titles":1,"content":1,"pages":1,"signatures":1,"about":1}}</default_value>
+    <edit_format_params>option_template_CMTV_Math_renderPositions</edit_format_params>
     <sub_options>where
-places</sub_options>
-    <relation group_id="Math" display_order="300"/>
+positions</sub_options>
+    <relation group_id="CMTV_Math" display_order="100"/>
+  </option>
+  <option option_id="CMTV_Math_renderSelectors" edit_format="callback" data_type="array" validation_class="CMTV\Math\Option\SelectorsArray" validation_method="verifyOption">
+    <default_value>[]</default_value>
+    <edit_format_params>CMTV\Math\Option\SelectorsArray::renderOption</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="CMTV_Math" display_order="200"/>
+  </option>
+  <option option_id="CMTV_Math_skipSelectors" edit_format="callback" data_type="array" validation_class="CMTV\Math\Option\SelectorsArray" validation_method="verifyOption">
+    <default_value>[]</default_value>
+    <edit_format_params>CMTV\Math\Option\SelectorsArray::renderOption</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="CMTV_Math" display_order="300"/>
   </option>
 </options>

@@ -1,0 +1,91 @@
+._fadeInOut()
+{
+	opacity: 0;
+	transition: opacity .2s;
+
+	&.showing
+	{
+		opacity: 1;
+	}
+}
+
+#editor_math_form
+{	
+	.preview-loading,
+	.preview-container
+	{
+		._fadeInOut();
+	}
+	
+	.preview-loading
+	{
+		margin-right: 5px;
+	}
+	
+	.preview-container
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		min-height: 100px;
+		
+		.empty, .error
+		{
+			font-size: 120%;
+			color: @xf-textColorMuted;
+		}
+		
+		.preview
+		{
+			overflow: auto;
+		}
+	}
+	
+}
+
+// #############################  MathJax  #############################
+
+#MathJax_MenuFrame
+{
+	z-index: 10000 !important;
+}
+
+.mjx-chtml,
+.MathJax_Display, .MathJax,
+.MathJax_PHTML, .MathJax_PHTML_Display,
+.MathJax_SVG, .MathJax_SVG_Display,
+.MathJax_PlainSource, .MathJax_PlainSource_Display,
+.MathJax_MathML
+{	
+	padding-bottom: 5px;
+	
+	overflow: hidden;
+	overflow-x: auto;
+	
+	&::-webkit-scrollbar 
+	{
+		width: 7px;
+		height: 7px;
+	}
+
+	&::-webkit-scrollbar-track 
+	{
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb 
+	{
+		background: xf-intensify(@xf-textColorMuted, -20%);
+		
+		&:hover
+		{
+			background: xf-intensify(@xf-textColorMuted, -10%);
+		}
+		
+		&:active
+		{
+			background: @xf-textColorMuted;
+		}
+	}
+}
