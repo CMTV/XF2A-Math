@@ -199,10 +199,8 @@
 	}
 </script>
 
-<xf:js prod="CMTV/Math/selector-resolver.min.js" dev="CMTV/Math/selector-resolver.js" addon="CMTV/Math" />
+<xf:js src="CMTV/Math/selector-resolver.js" min="1" addon="CMTV/Math" />
 <script>CMTV_Math.SResolver.resolve();</script>
-
-<xf:js prod="CMTV/Math/core.extend.min.js" dev="CMTV/Math/core.extend.js" addon="CMTV/Math" />
 
 <xf:set var="$config" value="" />
 
@@ -215,7 +213,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js{$config}&locale={$locale}" async></script>]]></template>
   <template type="public" title="CMTV_Math_editor_dialog_math" version_id="2010070" version_string="2.1.0"><![CDATA[<xf:title>{{ phrase('CMTV_Math_insert_math') }}</xf:title>
 
-<xf:js prod="CMTV/Math/insert-math-form.min.js" dev="CMTV/Math/insert-math-form.js" addon="CMTV/Math" />
+<xf:js src="CMTV/Math/insert-math-form.js" min="1" addon="CMTV/Math" />
 
 <form class="block" id="editor_math_form" data-xf-init="insert-math-form">
 	<div class="block-container">

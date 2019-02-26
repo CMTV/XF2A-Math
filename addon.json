@@ -2,8 +2,8 @@
     "legacy_addon_id": "",
     "title": "Math",
     "description": "Math support and a handy button to insert it all rolled into one addon!",
-    "version_id": 2010070,
-    "version_string": "2.1.0",
+    "version_id": 2010170,
+    "version_string": "2.1.1",
     "dev": "CMTV",
     "dev_url": "https://xenforo.com/community/members/cmtv.162075/",
     "faq_url": "",
@@ -13,8 +13,14 @@
         "Support me!": "https://www.patreon.com/cmtv"
     },
     "require": {
-        "XF": [2010070, "XenForo 2.1"],
-        "php": ["7.0.0", "PHP 7+"]
+        "XF": [
+            2010070,
+            "XenForo 2.1"
+        ],
+        "php": [
+            "7.0.0",
+            "PHP 7+"
+        ]
     },
     "icon": "fa-function"
 }

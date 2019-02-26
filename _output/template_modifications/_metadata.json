@@ -1,12 +1,15 @@
 {
     "public/CMTV_Math_editor_math_button.json": {
-        "hash": "5a0eb748359295cdb7db0775c2189e7e"
+        "hash": "45dcd7065f4842dd16d42308c5a457c5"
     },
     "public/CMTV_Math_editor_math_pharse.json": {
         "hash": "be1cff36b566d614a7cf1caa78c636d9"
     },
     "public/CMTV_Math_helper_js_global_mathjax.json": {
         "hash": "07696d92afabf9a6026ab2fb4196903d"
+    },
+    "public/CMTV_Math_helper_js_global_preview_observer.json": {
+        "hash": "993199a7bed55244f9b6d4c364389dcc"
     },
     "public/CMTV_Math_helper_js_global_style.json": {
         "hash": "ca78187d6581dd6912fbc9cf8d97c624"

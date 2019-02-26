@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "<!--[XF:include_js]-->",
-    "replace": "<xf:js prod=\"CMTV/Math/insert-math-button.min.js\" dev=\"CMTV/Math/insert-math-button.js\" addon=\"CMTV/Math\" />\n\n$0"
+    "replace": "<xf:js src=\"CMTV/Math/insert-math-button.js\" min=\"1\" addon=\"CMTV/Math\" />\n\n$0"
 }

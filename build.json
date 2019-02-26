@@ -6,6 +6,6 @@
         "js/CMTV/Math/insert-math-button.js",
         "js/CMTV/Math/insert-math-form.js",
         "js/CMTV/Math/selector-resolver.js",
-        "js/CMTV/Math/core.extend.js"
+        "js/CMTV/Math/preview-observer.js"
     ]
 }

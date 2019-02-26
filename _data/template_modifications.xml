@@ -2,7 +2,7 @@
 <template_modifications>
   <modification type="public" template="editor" modification_key="CMTV_Math_editor_math_button" description="Including handler for &quot;Math&quot; button" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<!--[XF:include_js]-->]]></find>
-    <replace><![CDATA[<xf:js prod="CMTV/Math/insert-math-button.min.js" dev="CMTV/Math/insert-math-button.js" addon="CMTV/Math" />
+    <replace><![CDATA[<xf:js src="CMTV/Math/insert-math-button.js" min="1" addon="CMTV/Math" />
 
 $0]]></replace>
   </modification>
@@ -17,6 +17,12 @@ $0]]></replace>
     <replace><![CDATA[$0
 
 <xf:include template="CMTV_Math_MathJax" />]]></replace>
+  </modification>
+  <modification type="public" template="helper_js_global" modification_key="CMTV_Math_helper_js_global_preview_observer" description="Observing &quot;js-previewContainer&quot; class changes" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<!--XF:JS-->]]></find>
+    <replace><![CDATA[<xf:js src="CMTV/Math/preview-observer.js" min="1" addon="CMTV/Math" />
+
+$0]]></replace>
   </modification>
   <modification type="public" template="helper_js_global" modification_key="CMTV_Math_helper_js_global_style" description="Including addon stylesheet" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<!--XF:CSS-->]]></find>
