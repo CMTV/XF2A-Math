@@ -1,0 +1,35 @@
+<xf:include template="CMTV_Math_macros" />
+
+<script>
+	const CMTV_MATH_RENDER_OPTIONS =
+	{
+		//
+		// Delimiters for math
+		//
+		"delimiters":
+		[
+			{left: "\\(", right: "\\)", display: false},
+			{left: "\\[", right: "\\]", display: true}
+		],
+
+		//
+		// Disable math rendering
+		//
+		"ignoredClasses":
+		[
+			"fr-wrapper", 	// In Froala editor
+			"username"		// In usernames
+		],
+
+		"macros": CMTV_MATH_MACROS // See CMTV_Math_macros template
+	};
+	
+	(function ($, document)
+	{	
+		$(document).on('xf:reinit', function (e)
+		{
+			renderMathInElement(document.body, CMTV_MATH_RENDER_OPTIONS);
+		});
+	})
+	(jQuery, document);
+</script>

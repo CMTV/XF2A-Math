@@ -1,236 +1,62 @@
 {
     "CMTV_Math_block.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
+        "version_id": 1000070,
+        "version_string": "1.0.0",
         "hash": "e1e4c8c9ccd9fc39c391da4bcd093fb2"
-    },
-    "CMTV_Math_center.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "4f1f6016fc9f3f2353c0cc7c67b292bd"
-    },
-    "CMTV_Math_in_certain_positions.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "6a6b1dcccbda1ab869e615588c252599"
     },
     "CMTV_Math_incorrect_latex_input.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "4b53b3e4e5a494cae7c74808625dc1b9"
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "ee6bca527991ff97cb1cf690d39e5dc7"
     },
     "CMTV_Math_inline.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
+        "version_id": 1000070,
+        "version_string": "1.0.0",
         "hash": "0125cf5f3ca38b312ca5d3b511c45a13"
     },
     "CMTV_Math_insert_math.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
+        "version_id": 1000070,
+        "version_string": "1.0.0",
         "hash": "d23b3f3367e79a14d77b56b5cf71029c"
     },
     "CMTV_Math_latex_input.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
+        "version_id": 1000070,
+        "version_string": "1.0.0",
         "hash": "87873c77f84e838ae3b4c1ca069b6688"
     },
     "CMTV_Math_latex_input_explain.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "f3fb3ef68ea53f330fbef13a3ff1a153"
-    },
-    "CMTV_Math_left.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "945d5e233cf7d6240f6b783b36a374ff"
-    },
-    "CMTV_Math_math.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "a49950aa047c2292e989e368a97a3aae"
-    },
-    "CMTV_Math_none.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "6adf97f83acf6453d4a6a4b1070f3754"
-    },
-    "CMTV_Math_normal.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "960b44c579bc2f6818d2daaf9e4c16f0"
-    },
-    "CMTV_Math_position_content.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "f15c1cae7882448b3fb0404682e17e61"
-    },
-    "CMTV_Math_position_signatures.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "dc1c9ce0179181c4f64b0bd191f2f05f"
-    },
-    "CMTV_Math_position_titles.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "8612579044efe457f11398b5a2377226"
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "732986946dfc11a551179bd7ac1d346f"
     },
     "CMTV_Math_preview.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
+        "version_id": 1000070,
+        "version_string": "1.0.0",
         "hash": "31fde7b05ac8952dacf4af8a704074ec"
-    },
-    "CMTV_Math_render_everywhere_hint.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "3f26f93c78eeadf26c623acdd3b22e80"
-    },
-    "CMTV_Math_right.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "92b09c7c48c520c3c55e497875da437c"
-    },
-    "CMTV_Math_selector.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "0c3cd33e7bf626da4897316a7158a7a4"
-    },
-    "CMTV_Math_simple.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "1fbb1e3943c2c6c560247ac8f9289780"
     },
     "CMTV_Math_start_typing_math.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "3801750deb56ca73c307275a0adfc9e9"
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "5b467eb17df2475331c0dafe1315eca8"
     },
     "CMTV_Math_type.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
+        "version_id": 1000070,
+        "version_string": "1.0.0",
         "hash": "a1fa27779242b4902f7ae3bdd5c6d508"
     },
     "CMTV_Math_type_explain.txt": {
         "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "4ea9450da0c6573ef72d1e0f6a8ad7f7"
-    },
-    "option.CMTV_Math_mathjax_configuration.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "28e7ada3dc69aaa8be24be53e6046333"
-    },
-    "option.CMTV_Math_mathjax_displayAlign.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "8b0eeba5230b5fb4ff4a33f829a802a2"
-    },
-    "option.CMTV_Math_mathjax_messageStyle.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "f7eb7f9834b6161089a0cbfc8cecd56a"
-    },
-    "option.CMTV_Math_mathjax_showMathMenu.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "f78b45a70cc104daa6968f9668c9ffdc"
-    },
-    "option.CMTV_Math_renderPositions.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "9d8d82d2ec893dc3099aea12255d0397"
-    },
-    "option.CMTV_Math_renderSelectors.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "fe7dfe3bda1cfc8d552e3a498d84c349"
-    },
-    "option.CMTV_Math_skipSelectors.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "a2d42cbf69cc05413f09ef05bb07c6e5"
-    },
-    "option_explain.CMTV_Math_mathjax_configuration.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "cadcbb1d989bd8d2026078d2d5c2278c"
-    },
-    "option_explain.CMTV_Math_mathjax_displayAlign.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "d41d8cd98f00b204e9800998ecf8427e"
-    },
-    "option_explain.CMTV_Math_mathjax_messageStyle.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "c53fe45237d94714e02713c1580e8caa"
-    },
-    "option_explain.CMTV_Math_mathjax_showMathMenu.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "f94f18e03ee265ccfdf526fb059993e9"
-    },
-    "option_explain.CMTV_Math_renderPositions.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "d41d8cd98f00b204e9800998ecf8427e"
-    },
-    "option_explain.CMTV_Math_renderSelectors.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "4908f6974b815773877cb5ebef602e22"
-    },
-    "option_explain.CMTV_Math_skipSelectors.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "7949845fdd9856e9695f1caf3e6b441b"
-    },
-    "option_group.CMTV_Math.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "a49950aa047c2292e989e368a97a3aae"
-    },
-    "option_group_description.CMTV_Math.txt": {
-        "global_cache": false,
-        "version_id": 2010070,
-        "version_string": "2.1.0",
-        "hash": "0e12fab7991bab4d0496b8d39b131fa2"
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "b5f0ead47dfa75a1e1357eec0bd217b9"
     }
 }

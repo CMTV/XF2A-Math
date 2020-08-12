@@ -1,9 +1,0 @@
-{
-    "template": "helper_js_global",
-    "description": "Observing \"js-previewContainer\" class changes",
-    "execution_order": 10,
-    "enabled": true,
-    "action": "str_replace",
-    "find": "<!--XF:JS-->",
-    "replace": "<xf:js src=\"CMTV/Math/preview-observer.js\" min=\"1\" addon=\"CMTV/Math\" />\n\n$0"
-}

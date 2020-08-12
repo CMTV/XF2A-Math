@@ -1,8 +1,27 @@
+//
+// Katex settings
+//
+
+ .katex-display
+{
+	margin: 0;
+	.base { margin: 15px/2.2 0; }
+}
+
+.katex > .katex-html
+{
+	white-space: normal;
+}
+
+
+//
+// "Insert math" dialog
+//
+
 ._fadeInOut()
 {
 	opacity: 0;
 	transition: opacity .2s;
-
 	&.showing
 	{
 		opacity: 1;
@@ -36,56 +55,14 @@
 			color: @xf-textColorMuted;
 		}
 		
+		.error
+		{
+			color: @xf-errorColor;
+		}
+		
 		.preview
 		{
-			overflow: auto;
-		}
-	}
-	
-}
-
-// #############################  MathJax  #############################
-
-#MathJax_MenuFrame
-{
-	z-index: 10000 !important;
-}
-
-.mjx-chtml,
-.MathJax_Display, .MathJax,
-.MathJax_PHTML, .MathJax_PHTML_Display,
-.MathJax_SVG, .MathJax_SVG_Display,
-.MathJax_PlainSource, .MathJax_PlainSource_Display,
-.MathJax_MathML
-{	
-	padding-bottom: 5px;
-	
-	overflow: hidden;
-	overflow-x: auto;
-	
-	&::-webkit-scrollbar 
-	{
-		width: 7px;
-		height: 7px;
-	}
-
-	&::-webkit-scrollbar-track 
-	{
-		background: transparent;
-	}
-
-	&::-webkit-scrollbar-thumb 
-	{
-		background: xf-intensify(@xf-textColorMuted, -20%);
-		
-		&:hover
-		{
-			background: xf-intensify(@xf-textColorMuted, -10%);
-		}
-		
-		&:active
-		{
-			background: @xf-textColorMuted;
+			//overflow: auto;
 		}
 	}
 }

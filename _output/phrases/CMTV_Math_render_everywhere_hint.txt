@@ -1,1 +1,0 @@
-Be careful with this option as it will enable math rendering absolutely everywhere on the page, including usernames, links, buttons and so on.

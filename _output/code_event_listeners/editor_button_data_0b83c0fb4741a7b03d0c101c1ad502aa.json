@@ -1,9 +1,9 @@
 {
     "event_id": "editor_button_data",
     "execute_order": 10,
-    "callback_class": "CMTV\\Math\\EventsListener",
+    "callback_class": "CMTV\\Math\\EventListener",
     "callback_method": "editorButtonData",
     "active": true,
     "hint": "",
-    "description": "Adding \"Math\" button that opens an \"Inset math\" dialog"
+    "description": "Making \"Insert math\" button visible when editing editor toolbars"
 }

@@ -86,27 +86,40 @@ var CMTV_Math = window.CMTV_Math || {};
             this.$preview.html(toRender);
 
             this.setState('preview');
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub, this.$preview.get(0)], function ()
-            {
-                if (toRender === that.$preview.html())
-                {
-                    that.setState('error');
-                }
 
-                that.fadeIn();
-            });
+            renderMathInElement(this.$preview.get(0), Object.assign(CMTV_MATH_RENDER_OPTIONS, { errorCallback: () => this.setState('error') }));
+            this.fadeIn();
         },
 
         wrapMath: function (math)
         {
-            var begin = '\\[ ', end = ' \\]';
+            let delimiters = this.getMathDelimiters(this.typeVal() !== 'inline');
+            return delimiters.left + ' ' + math + ' ' + delimiters.right;
+        },
 
-            if (this.typeVal() === 'inline')
+        getMathDelimiters: function(isDisplay = true)
+        {
+            let left = '\\[', right = '\\]';
+
+            if (isDisplay === false)
             {
-                begin = '\\( '; end = ' \\)';
+                left = '\\('; right = '\\)';
             }
 
-            return begin + math + end;
+            for (let i = 0; i < CMTV_MATH_RENDER_OPTIONS.delimiters; i++)
+            {
+                let delimiterObj = CMTV_MATH_RENDER_OPTIONS.delimiters[i];
+
+                if (delimiterObj.display === isDisplay)
+                {
+                    left =  delimiterObj.left;
+                    right = delimiterObj.right;
+
+                    break;
+                }
+            }
+
+            return { left: left, right: right }
         },
 
         fadeIn: function ()

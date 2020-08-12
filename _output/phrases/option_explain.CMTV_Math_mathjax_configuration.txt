@@ -1,5 +1,0 @@
-<a href="http://docs.mathjax.org/en/latest/config-files.html#combined-configurations" target="_blank">A list of available configurations</a><br><br>
-<div class="blockMessage blockMessage--iconic blockMessage--important" style="margin: 0 2px;">
-<b>Make sure you fully understand what you are doing when changing this!</b><br>
-You may need to change MathJax configuration in <code>CMTV_Math_MathJax</code> template.
-</div>

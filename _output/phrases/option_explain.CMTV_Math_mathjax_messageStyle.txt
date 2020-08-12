@@ -1,6 +1,0 @@
-This value controls the verbosity of MathJax messages in the lower left-hand corner.
-<ul>
-<li><strong>Normal</strong> — showing full file name or the percentage of the mathematics processed</li>
-<li><strong>Simple</strong> — messages are shorter</li>
-<li><strong>None</strong> — no messages at all</li>
-</ul>

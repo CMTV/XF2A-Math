@@ -1,1 +1,1 @@
-<a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols" target="_blank">How to use LaTeX?</a>
+<a href="https://www.latex-tutorial.com/tutorials/amsmath/" target="_blank">How to write math using LaTeX?</a> • <a href="https://katex.org/docs/supported.html" target="_blank">List of supported functions</a>

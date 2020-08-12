@@ -1,0 +1,9 @@
+{
+    "template": "editor",
+    "description": "Adding \"Insert math\" button phrase",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\"__lang end__\": \"\"",
+    "replace": "\"CMTV_Math_insert_math\": \"{{ phrase('CMTV_Math_insert_math')|escape('json') }}\",\n$0"
+}

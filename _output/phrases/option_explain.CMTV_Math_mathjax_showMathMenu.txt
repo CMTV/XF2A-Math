@@ -1,1 +1,0 @@
-If enabled, right-clicking (on Windows or Linux) or control-clicking (on Mac OS X) will produce a MathJax menu that allows you to get the source of the mathematics in various formats, change the size of the mathematics relative to the surrounding text, get information about MathJax, and configure other MathJax settings.

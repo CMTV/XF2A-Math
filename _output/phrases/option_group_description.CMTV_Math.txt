@@ -1,1 +1,0 @@
-Where to render math and MathJax configuration options.

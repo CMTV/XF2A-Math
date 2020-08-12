@@ -1,6 +1,6 @@
 var CMTV_Math = window.CMTV_Math || {};
 
-!function ($, window, document)
+!function($, window, document)
 {
     "use strict";
 
@@ -11,6 +11,11 @@ var CMTV_Math = window.CMTV_Math || {};
         _beforeShow: function (overlay)
         {
             this.ed.$el.blur();
+        },
+
+        _afterHide: function (overlay)
+        {
+            console.log('here!');
         },
 
         _init: function (overlay)
@@ -38,22 +43,23 @@ var CMTV_Math = window.CMTV_Math || {};
         }
     });
 
-    // @todo Have to use "CMTVMath" and not "CMTV_Math" because of the bug
-    // @see https://xenforo.com/community/threads/actiondialog-silently-removes-underscores-_.161122
-
     XF.EditorHelpers.dialogs.CMTVMath = new CMTV_Math.EditorDialogMath('CMTV_Math');
+
+    //
+    // Registering "Insert math" button in Froala editor
+    //
 
     $(document).on('editor:first-start', function ()
     {
         $.FE.DefineIcon('CMTV_Math', { NAME: 'function' });
         $.FE.RegisterCommand('CMTV_Math', {
-            title: 'Math',
+            title: 'CMTV_Math_insert_math',
             icon: 'CMTV_Math',
             undo: true,
             focus: true,
             callback: function ()
             {
-                XF.EditorHelpers.loadDialog(this, 'CMTVMath');
+                XF.EditorHelpers.loadDialog(this, 'CMTVMath'); // @see https://xenforo.com/community/threads/actiondialog-silently-removes-underscores-_.161122
             }
         });
 
