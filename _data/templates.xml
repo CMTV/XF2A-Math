@@ -100,7 +100,7 @@
 		<xf:submitrow submit="{{ phrase('continue') }}" id="editor_math_submit" />
 	</div>
 </form>]]></template>
-  <template type="public" title="CMTV_Math_js" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:include template="CMTV_Math_macros" />
+  <template type="public" title="CMTV_Math_js" version_id="3000170" version_string="3.0.1"><![CDATA[<xf:include template="CMTV_Math_macros" />
 
 <script>
 	const CMTV_MATH_RENDER_OPTIONS =
@@ -110,8 +110,8 @@
 		//
 		"delimiters":
 		[
-			{left: "\\(", right: "\\)", display: false},
-			{left: "\\[", right: "\\]", display: true}
+			{left: "[imath]", right: "[/imath]", display: false},
+			{left: "[math]",  right: "[/math]", display: true}
 		],
 
 		//

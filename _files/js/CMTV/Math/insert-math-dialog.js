@@ -106,7 +106,7 @@ var CMTV_Math = window.CMTV_Math || {};
                 left = '\\('; right = '\\)';
             }
 
-            for (let i = 0; i < CMTV_MATH_RENDER_OPTIONS.delimiters; i++)
+            for (let i = 0; i < CMTV_MATH_RENDER_OPTIONS.delimiters.length; i++)
             {
                 let delimiterObj = CMTV_MATH_RENDER_OPTIONS.delimiters[i];
 

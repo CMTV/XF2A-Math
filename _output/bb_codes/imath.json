@@ -1,0 +1,20 @@
+{
+    "bb_code_mode": "replace",
+    "has_option": "no",
+    "replace_html": "",
+    "replace_html_email": "",
+    "replace_text": "",
+    "callback_class": "",
+    "callback_method": "",
+    "option_regex": "",
+    "trim_lines_after": 0,
+    "plain_children": true,
+    "disable_smilies": true,
+    "disable_nl2br": true,
+    "disable_autolink": true,
+    "allow_empty": false,
+    "allow_signature": true,
+    "editor_icon_type": "",
+    "editor_icon_value": "",
+    "active": true
+}

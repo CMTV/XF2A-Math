@@ -10,4 +10,12 @@
   <phrase title="CMTV_Math_start_typing_math" version_id="1000070" version_string="1.0.0"><![CDATA[Start typing math in "LaTeX input"...]]></phrase>
   <phrase title="CMTV_Math_type" version_id="1000070" version_string="1.0.0"><![CDATA[Type]]></phrase>
   <phrase title="CMTV_Math_type_explain" version_id="1000070" version_string="1.0.0"><![CDATA[Inline math is smaller and should be used inside the plain text. Block math is bigger and should be used for big equations and formulas. It also creates line breaks before and after.]]></phrase>
+  <phrase title="custom_bb_code_desc.imath" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_desc.math" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_example.imath" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_example.math" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_output.imath" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_output.math" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_title.imath" version_id="3000170" version_string="3.0.1"><![CDATA[Inline math]]></phrase>
+  <phrase title="custom_bb_code_title.math" version_id="3000170" version_string="3.0.1"><![CDATA[Block math]]></phrase>
 </phrases>
