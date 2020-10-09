@@ -7,7 +7,7 @@
     "callback_class": "",
     "callback_method": "",
     "option_regex": "",
-    "trim_lines_after": 0,
+    "trim_lines_after": 1,
     "plain_children": true,
     "disable_smilies": true,
     "disable_nl2br": true,

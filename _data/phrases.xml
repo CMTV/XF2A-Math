@@ -18,4 +18,12 @@
   <phrase title="custom_bb_code_output.math" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
   <phrase title="custom_bb_code_title.imath" version_id="3000170" version_string="3.0.1"><![CDATA[Inline math]]></phrase>
   <phrase title="custom_bb_code_title.math" version_id="3000170" version_string="3.0.1"><![CDATA[Block math]]></phrase>
+  <phrase title="option.CMTV_Math_customMathDelimiters" version_id="3000170" version_string="3.0.1"><![CDATA[Custom math delimiters]]></phrase>
+  <phrase title="option.CMTV_Math_ignoredClasses" version_id="3000170" version_string="3.0.1"><![CDATA[Igonre math in elements with classes]]></phrase>
+  <phrase title="option.CMTV_Math_macros" version_id="3000170" version_string="3.0.1"><![CDATA[Math macros]]></phrase>
+  <phrase title="option_explain.CMTV_Math_customMathDelimiters" version_id="3000170" version_string="3.0.1"><![CDATA[The value in this field is parsed inside PHP so write only strict JSON data!]]></phrase>
+  <phrase title="option_explain.CMTV_Math_ignoredClasses" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.CMTV_Math_macros" version_id="3000170" version_string="3.0.1"><![CDATA[]]></phrase>
+  <phrase title="option_group.CMTV_Math" version_id="3000170" version_string="3.0.1"><![CDATA[Math options]]></phrase>
+  <phrase title="option_group_description.CMTV_Math" version_id="3000170" version_string="3.0.1"><![CDATA[How and where to render math on your forum.]]></phrase>
 </phrases>

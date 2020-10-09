@@ -1,0 +1,13 @@
+{
+    "edit_format": "template",
+    "edit_format_params": "CMTV_Math_option_json",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "advanced": false,
+    "default_value": "{\n\t// Parameterless example (short version to write limit for sequences, where n goes to infinity)\n\t//\"\\\\limn\":   \"\\\\lim\\\\limits_{n\\\\to\\\\infty}\",\n\t\n\t// Macros with one parameter example (floor of the number)\n\t//\"\\\\floor\":  \"\\\\left\\\\lfloor #1 \\\\right\\\\rfloor\",\n}",
+    "relations": {
+        "CMTV_Math": 10
+    }
+}

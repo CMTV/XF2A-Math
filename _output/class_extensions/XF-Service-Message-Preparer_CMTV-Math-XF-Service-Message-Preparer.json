@@ -1,0 +1,6 @@
+{
+    "from_class": "XF\\Service\\Message\\Preparer",
+    "to_class": "CMTV\\Math\\XF\\Service\\Message\\Preparer",
+    "execute_order": 10,
+    "active": true
+}

@@ -1,0 +1,9 @@
+{
+    "event_id": "bb_code_processor_action_map",
+    "execute_order": 10,
+    "callback_class": "CMTV\\Math\\EventListener",
+    "callback_method": "bbCodeProcessorActionMap",
+    "active": true,
+    "hint": "",
+    "description": "Supporting shortcuts for block and inline math"
+}

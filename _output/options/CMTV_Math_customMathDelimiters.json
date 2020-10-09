@@ -1,0 +1,13 @@
+{
+    "edit_format": "template",
+    "edit_format_params": "CMTV_Math_option_json",
+    "data_type": "string",
+    "sub_options": [],
+    "validation_class": "",
+    "validation_method": "",
+    "advanced": false,
+    "default_value": "[\n\t{ \"left\": \"$$\", \"right\": \"$$\", \"display\": true },\n  \t{ \"left\": \"$\",  \"right\": \"$\",  \"display\": false },\n\t\n\t{ \"left\": \"\\\\[\", \"right\": \"\\\\]\", \"display\": true },\n\t{ \"left\": \"\\\\(\", \"right\": \"\\\\)\", \"display\": false }\n]",
+    "relations": {
+        "CMTV_Math": 20
+    }
+}

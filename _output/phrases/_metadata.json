@@ -106,5 +106,53 @@
         "version_id": 3000170,
         "version_string": "3.0.1",
         "hash": "f9cc15efcbfd8ddbe6dde583ae9cdf2d"
+    },
+    "option.CMTV_Math_customMathDelimiters.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "d0c61b8e88cb898b223039734039f629"
+    },
+    "option.CMTV_Math_ignoredClasses.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "e1037c77208e2716f5766748fb6c4b62"
+    },
+    "option.CMTV_Math_macros.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "42a8e07c196b793ab6e726bd0554258c"
+    },
+    "option_explain.CMTV_Math_customMathDelimiters.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "a4a96012163582d12840c431a3ed5771"
+    },
+    "option_explain.CMTV_Math_ignoredClasses.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.CMTV_Math_macros.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_group.CMTV_Math.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "f5516fc17b21074653e6abc6650a15ae"
+    },
+    "option_group_description.CMTV_Math.txt": {
+        "global_cache": false,
+        "version_id": 3000170,
+        "version_string": "3.0.1",
+        "hash": "b926e5a0c1fefd4692870d474b4f077f"
     }
 }

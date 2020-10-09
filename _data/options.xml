@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<options/>
+<options>
+  <option option_id="CMTV_Math_customMathDelimiters" edit_format="template" data_type="string">
+    <default_value>[
+	{ "left": "$$", "right": "$$", "display": true },
+  	{ "left": "$",  "right": "$",  "display": false },
+	
+	{ "left": "\\[", "right": "\\]", "display": true },
+	{ "left": "\\(", "right": "\\)", "display": false }
+]</default_value>
+    <edit_format_params>CMTV_Math_option_json</edit_format_params>
+    <relation group_id="CMTV_Math" display_order="20"/>
+  </option>
+  <option option_id="CMTV_Math_ignoredClasses" edit_format="template" data_type="string">
+    <default_value>[
+	"fr-wrapper", 	// Froala editor
+	"username"		// Username
+]</default_value>
+    <edit_format_params>CMTV_Math_option_json</edit_format_params>
+    <relation group_id="CMTV_Math" display_order="30"/>
+  </option>
+  <option option_id="CMTV_Math_macros" edit_format="template" data_type="string">
+    <default_value>{
+	// Parameterless example (short version to write limit for sequences, where n goes to infinity)
+	//"\\limn":   "\\lim\\limits_{n\\to\\infty}",
+	
+	// Macros with one parameter example (floor of the number)
+	//"\\floor":  "\\left\\lfloor #1 \\right\\rfloor",
+}</default_value>
+    <edit_format_params>CMTV_Math_option_json</edit_format_params>
+    <relation group_id="CMTV_Math" display_order="10"/>
+  </option>
+</options>

@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="public" title="CMTV_Math.less" version_id="1000070" version_string="1.0.0"><![CDATA[//
+  <template type="admin" title="CMTV_Math_option_json" version_id="3000170" version_string="3.0.1"><![CDATA[<xf:formrow rowtype="input"
+			label="{$option.title}"
+			hint="{$hintHtml}"
+			explain="{$explainHtml}"
+			html="{$listedHtml}"
+			rowclass="{$rowClass}">
+	<xf:codeeditor
+				   mode="json"
+				   name="{$inputName}"
+				   value="{$option.option_value}"
+				   class="codeEditor--autoSize"
+				   rowtype="fullWidth noLabel" />
+</xf:formrow>]]></template>
+  <template type="public" title="CMTV_Math.less" version_id="3000170" version_string="3.0.1"><![CDATA[//
 // Katex settings
 //
 
  .katex-display
 {
-	margin: 0;
+	margin: 0 !important;
 	.base { margin: 15px/2.2 0; }
+	
+	overflow: hidden;
+    overflow-x: auto;
+
+	&::-webkit-scrollbar
+	{
+		height: 5px;
+	}
+
+	&::-webkit-scrollbar-track
+	{
+		background: @xf-contentAltBg;
+		border-radius: @xf-borderRadiusSmall;
+	}
+
+	&::-webkit-scrollbar-thumb
+	{
+		background: @xf-borderColor;
+		border-radius: @xf-borderRadiusSmall;
+
+		&:hover
+		{
+			background: @xf-borderColorHeavy;
+		}
+	}
 }
 
 .katex > .katex-html
@@ -68,7 +106,7 @@
 		}
 	}
 }]]></template>
-  <template type="public" title="CMTV_Math_insert_math_dialog" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:title>{{ phrase('CMTV_Math_insert_math') }}</xf:title>
+  <template type="public" title="CMTV_Math_insert_math_dialog" version_id="3000170" version_string="3.0.1"><![CDATA[<xf:title>{{ phrase('CMTV_Math_insert_math') }}</xf:title>
 
 <xf:js src="CMTV/Math/insert-math-dialog.js" min="1" addon="CMTV/Math" />
 
@@ -91,7 +129,7 @@
 			</h2>
 			
 			<div class="preview-container showing">
-				<div class="preview">Preview</div>
+				<div class="preview">{{ phrase('preview') }}</div>
 				<div class="error">{{ phrase('CMTV_Math_incorrect_latex_input') }}</div>
 				<div class="empty">{{ phrase('CMTV_Math_start_typing_math') }}</div>
 			</div>
@@ -100,34 +138,22 @@
 		<xf:submitrow submit="{{ phrase('continue') }}" id="editor_math_submit" />
 	</div>
 </form>]]></template>
-  <template type="public" title="CMTV_Math_js" version_id="3000170" version_string="3.0.1"><![CDATA[<xf:include template="CMTV_Math_macros" />
-
-<script>
+  <template type="public" title="CMTV_Math_js" version_id="3000170" version_string="3.0.1"><![CDATA[<script>
 	const CMTV_MATH_RENDER_OPTIONS =
 	{
-		//
-		// Delimiters for math
-		//
 		"delimiters":
 		[
 			{left: "[imath]", right: "[/imath]", display: false},
 			{left: "[math]",  right: "[/math]", display: true}
-		],
+		].concat({$xf.options.CMTV_Math_customMathDelimiters|raw}),
 
-		//
-		// Disable math rendering
-		//
-		"ignoredClasses":
-		[
-			"fr-wrapper", 	// In Froala editor
-			"username"		// In usernames
-		],
+		"ignoredClasses": [].concat({$xf.options.CMTV_Math_ignoredClasses|raw}),
 
-		"macros": CMTV_MATH_MACROS // See CMTV_Math_macros template
+		"macros": {{ $xf.options.CMTV_Math_macros ? $xf.options.CMTV_Math_macros|raw : '{}' }}
 	};
 	
 	(function ($, document)
-	{	
+	{
 		$(document).on('xf:reinit', function (e)
 		{
 			renderMathInElement(document.body, CMTV_MATH_RENDER_OPTIONS);
@@ -139,18 +165,4 @@
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>]]></template>
-  <template type="public" title="CMTV_Math_macros" version_id="1000070" version_string="1.0.0"><![CDATA[<script>
-const CMTV_MATH_MACROS =
-{
-	//
-	// Your custom math shortcuts and macroses goes below
-	//
-	
-	// Shortcut example (short version to write limit for sequences, where n goes to infinity)
-	//"\\limn":   "\\lim\\limits_{n\\to\\infty}",
-	
-	// Macros with one parameter example (floor of the number)
-	//"\\floor":  "\\left\\lfloor #1 \\right\\rfloor",
-};
-</script>]]></template>
 </templates>

@@ -4,8 +4,33 @@
 
  .katex-display
 {
-	margin: 0;
+	margin: 0 !important;
 	.base { margin: 15px/2.2 0; }
+	
+	overflow: hidden;
+    overflow-x: auto;
+
+	&::-webkit-scrollbar
+	{
+		height: 5px;
+	}
+
+	&::-webkit-scrollbar-track
+	{
+		background: @xf-contentAltBg;
+		border-radius: @xf-borderRadiusSmall;
+	}
+
+	&::-webkit-scrollbar-thumb
+	{
+		background: @xf-borderColor;
+		border-radius: @xf-borderRadiusSmall;
+
+		&:hover
+		{
+			background: @xf-borderColorHeavy;
+		}
+	}
 }
 
 .katex > .katex-html

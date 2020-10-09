@@ -1,0 +1,1 @@
+The value in this field is parsed inside PHP so write only strict JSON data!

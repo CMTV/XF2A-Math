@@ -94,7 +94,7 @@ var CMTV_Math = window.CMTV_Math || {};
         wrapMath: function (math)
         {
             let delimiters = this.getMathDelimiters(this.typeVal() !== 'inline');
-            return delimiters.left + ' ' + math + ' ' + delimiters.right;
+            return delimiters.left + math + delimiters.right;
         },
 
         getMathDelimiters: function(isDisplay = true)

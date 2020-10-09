@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <code_event_listeners>
+  <listener event_id="bb_code_processor_action_map" execute_order="10" callback_class="CMTV\Math\EventListener" callback_method="bbCodeProcessorActionMap" active="1" description="Supporting shortcuts for block and inline math"/>
   <listener event_id="editor_button_data" execute_order="10" callback_class="CMTV\Math\EventListener" callback_method="editorButtonData" active="1" description="Making &quot;Insert math&quot; button visible when editing editor toolbars"/>
   <listener event_id="editor_dialog" execute_order="10" callback_class="CMTV\Math\EventListener" callback_method="editorDialog" active="1" hint="CMTVMath" description="Registreting dialog for &quot;Insert math&quot; button"/>
 </code_event_listeners>

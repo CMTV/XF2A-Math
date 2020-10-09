@@ -23,4 +23,9 @@ class EventListener
     {
         $data['template'] = 'CMTV_Math_insert_math_dialog';
     }
+
+    public static function bbCodeProcessorActionMap(array &$processorActionMap)
+    {
+        $processorActionMap['CMTV_Math'] = 'CMTV\Math:MathDelimiters';
+    }
 }
